@@ -12,10 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController: UINavigationController?
+    var presenter: MainPresenter?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        navigationController = UINavigationController()
+        let homeViewController: HomeViewController = HomeViewController()
+        navigationController?.pushViewController(homeViewController, animated: false)
+        presenter = MainPresenter()
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
+        window?.backgroundColor = UIColor.blue
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -39,6 +51,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func getNavigationController()->UINavigationController{
+        return navigationController!
+    }
+    
+    func getPresenter()->MainPresenter{
+        return presenter!
+    }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Fecha incorrecta", message: "La fecha de enamoramiento no puede ser anterior al nacimiento, de otra forma se podría ser enamoramiento desde un universo paralelo, pero si los grandes del DIT dicen que no es que no :(", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Atrás", style: UIAlertActionStyle.default, handler: nil))
+        navigationController?.present(alert, animated: true, completion: nil)
     }
 
 

@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		0610D7581DE610BD0017C664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610D7571DE610BD0017C664 /* AppDelegate.swift */; };
-		0610D75A1DE610BD0017C664 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610D7591DE610BD0017C664 /* HomeViewController.swift */; };
-		0610D75D1DE610BD0017C664 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0610D75B1DE610BD0017C664 /* HomeViewController.storyboard */; };
 		0610D75F1DE610BD0017C664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0610D75E1DE610BD0017C664 /* Assets.xcassets */; };
 		0610D7621DE610BD0017C664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0610D7601DE610BD0017C664 /* LaunchScreen.storyboard */; };
+		0610D76F1DE615B50017C664 /* BornDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610D76E1DE615B50017C664 /* BornDateViewController.swift */; };
+		0610D7711DE615CC0017C664 /* BornDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0610D7701DE615CC0017C664 /* BornDateViewController.xib */; };
+		0610D7731DE615E10017C664 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0610D7721DE615E10017C664 /* HomeViewController.xib */; };
+		0610D7751DE61A600017C664 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610D7741DE61A600017C664 /* HomeViewController.swift */; };
+		0686A45F1DE620A2001660E9 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686A45E1DE620A2001660E9 /* MainPresenter.swift */; };
+		0686A4611DE62E1E001660E9 /* FallingDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686A4601DE62E1E001660E9 /* FallingDateViewController.swift */; };
+		0686A4631DE62E2A001660E9 /* SentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686A4621DE62E2A001660E9 /* SentenceViewController.swift */; };
+		0686A4661DE62E78001660E9 /* FallingDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0686A4651DE62E78001660E9 /* FallingDateViewController.xib */; };
+		0686A4681DE62E85001660E9 /* SentenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0686A4671DE62E85001660E9 /* SentenceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0610D7541DE610BD0017C664 /* Funeral de la media naranja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funeral de la media naranja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0610D7571DE610BD0017C664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0610D7591DE610BD0017C664 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0610D75C1DE610BD0017C664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
 		0610D75E1DE610BD0017C664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0610D7611DE610BD0017C664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0610D7631DE610BD0017C664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0610D76E1DE615B50017C664 /* BornDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BornDateViewController.swift; sourceTree = "<group>"; };
+		0610D7701DE615CC0017C664 /* BornDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BornDateViewController.xib; sourceTree = "<group>"; };
+		0610D7721DE615E10017C664 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0610D7741DE61A600017C664 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0686A45E1DE620A2001660E9 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		0686A4601DE62E1E001660E9 /* FallingDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingDateViewController.swift; sourceTree = "<group>"; };
+		0686A4621DE62E2A001660E9 /* SentenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceViewController.swift; sourceTree = "<group>"; };
+		0686A4651DE62E78001660E9 /* FallingDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FallingDateViewController.xib; sourceTree = "<group>"; };
+		0686A4671DE62E85001660E9 /* SentenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentenceViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				0610D7571DE610BD0017C664 /* AppDelegate.swift */,
+				0686A45E1DE620A2001660E9 /* MainPresenter.swift */,
 				0610D7691DE614EB0017C664 /* Views */,
 				0610D75E1DE610BD0017C664 /* Assets.xcassets */,
 				0610D7601DE610BD0017C664 /* LaunchScreen.storyboard */,
@@ -77,8 +92,8 @@
 		0610D76A1DE615150017C664 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0610D7591DE610BD0017C664 /* HomeViewController.swift */,
-				0610D75B1DE610BD0017C664 /* HomeViewController.storyboard */,
+				0610D7741DE61A600017C664 /* HomeViewController.swift */,
+				0610D7721DE615E10017C664 /* HomeViewController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -86,6 +101,8 @@
 		0610D76B1DE6151C0017C664 /* BornDate */ = {
 			isa = PBXGroup;
 			children = (
+				0610D76E1DE615B50017C664 /* BornDateViewController.swift */,
+				0610D7701DE615CC0017C664 /* BornDateViewController.xib */,
 			);
 			name = BornDate;
 			sourceTree = "<group>";
@@ -93,6 +110,8 @@
 		0610D76C1DE615290017C664 /* FallingDate */ = {
 			isa = PBXGroup;
 			children = (
+				0686A4601DE62E1E001660E9 /* FallingDateViewController.swift */,
+				0686A4651DE62E78001660E9 /* FallingDateViewController.xib */,
 			);
 			name = FallingDate;
 			sourceTree = "<group>";
@@ -100,6 +119,8 @@
 		0610D76D1DE615420017C664 /* Sentence */ = {
 			isa = PBXGroup;
 			children = (
+				0686A4621DE62E2A001660E9 /* SentenceViewController.swift */,
+				0686A4671DE62E85001660E9 /* SentenceViewController.xib */,
 			);
 			name = Sentence;
 			sourceTree = "<group>";
@@ -164,8 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0610D7621DE610BD0017C664 /* LaunchScreen.storyboard in Resources */,
+				0686A4661DE62E78001660E9 /* FallingDateViewController.xib in Resources */,
+				0610D7711DE615CC0017C664 /* BornDateViewController.xib in Resources */,
 				0610D75F1DE610BD0017C664 /* Assets.xcassets in Resources */,
-				0610D75D1DE610BD0017C664 /* HomeViewController.storyboard in Resources */,
+				0610D7731DE615E10017C664 /* HomeViewController.xib in Resources */,
+				0686A4681DE62E85001660E9 /* SentenceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,22 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0610D75A1DE610BD0017C664 /* HomeViewController.swift in Sources */,
+				0610D76F1DE615B50017C664 /* BornDateViewController.swift in Sources */,
 				0610D7581DE610BD0017C664 /* AppDelegate.swift in Sources */,
+				0610D7751DE61A600017C664 /* HomeViewController.swift in Sources */,
+				0686A4611DE62E1E001660E9 /* FallingDateViewController.swift in Sources */,
+				0686A45F1DE620A2001660E9 /* MainPresenter.swift in Sources */,
+				0686A4631DE62E2A001660E9 /* SentenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0610D75B1DE610BD0017C664 /* HomeViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0610D75C1DE610BD0017C664 /* Base */,
-			);
-			name = HomeViewController.storyboard;
-			sourceTree = "<group>";
-		};
 		0610D7601DE610BD0017C664 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +359,7 @@
 				0610D7681DE610BD0017C664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
