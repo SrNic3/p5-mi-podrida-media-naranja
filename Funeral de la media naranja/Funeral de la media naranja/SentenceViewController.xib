@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SentenceViewController" customModule="Funeral_de_la_media_naranja" customModuleProvider="target">
             <connections>
+                <outlet property="dateLabel" destination="E17-B1-NZR" id="aJv-hy-Y6x"/>
                 <outlet property="view" destination="iN0-l3-epB" id="D0y-UI-VjC"/>
             </connections>
         </placeholder>
@@ -18,7 +19,41 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habrá pasado la mitad de su vida con su amor el: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rg-5p-ocw">
+                    <rect key="frame" x="37" y="303.5" width="300" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0ZL-GW-aHq"/>
+                        <constraint firstAttribute="width" constant="300" id="uiW-eh-vi9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd/MM/yyyy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E17-B1-NZR">
+                    <rect key="frame" x="140" y="371" width="95.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB1-yN-57x">
+                    <rect key="frame" x="16" y="20" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goBack" destination="-1" eventType="touchUpInside" id="osw-ld-ihW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3rg-5p-ocw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="84x-Oy-FOo"/>
+                <constraint firstItem="E17-B1-NZR" firstAttribute="top" secondItem="3rg-5p-ocw" secondAttribute="bottom" constant="7.5" id="8bW-zc-8Yk"/>
+                <constraint firstItem="3rg-5p-ocw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ee2-RA-WcE"/>
+                <constraint firstItem="E17-B1-NZR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wGa-NG-HMn"/>
+            </constraints>
         </view>
     </objects>
 </document>

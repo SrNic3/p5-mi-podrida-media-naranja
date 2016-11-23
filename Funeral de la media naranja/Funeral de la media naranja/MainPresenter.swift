@@ -11,9 +11,11 @@ import UIKit
 
 class MainPresenter{
     
+    struct defaultsKeys {
+        static let keyBornDate = "keyBornDate"
+        static let keyFallingDate = "keyFallingDate"
+    }
     
-    var bornDate: Date?
-    var fallingDate: Date?
     
     init() {
         NSLog("HOLI HOLITA", "")
@@ -33,7 +35,7 @@ class MainPresenter{
     
     
     func goToSentenceScreen(){
-        if((bornDate?.compare(fallingDate!)) == ComparisonResult.orderedAscending){
+        if (getBornDate().compare(getFallingDate())) == ComparisonResult.orderedAscending {
             let del = UIApplication.shared.delegate as? AppDelegate
             let sentenceViewController = SentenceViewController()
             del?.getNavigationController().pushViewController(sentenceViewController, animated: true)
@@ -41,6 +43,15 @@ class MainPresenter{
             let del = UIApplication.shared.delegate as? AppDelegate
             del?.showAlert()
         }
+        
+        var d1 = getBornDate()
+        var d2 = getFallingDate()
+        
+        var time = d2.timeIntervalSince(d1)
+        
+        d2.addTimeInterval(time)
+        
+        NSLog("fecha %s", "fecha")
     }
     
     func goBack(){
@@ -49,11 +60,55 @@ class MainPresenter{
     }
     
     func setBornDate(date: Date){
-        bornDate = date
+        let defaults = UserDefaults.standard
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let dateString = dateFormatter.string(from: date)
+        defaults.setValue(dateString, forKey: defaultsKeys.keyBornDate)
+        defaults.synchronize()
+
     }
     
     func setFallingDate(date: Date){
-        fallingDate = date
+        let defaults = UserDefaults.standard
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let dateString = dateFormatter.string(from: date)
+        defaults.setValue(dateString, forKey: defaultsKeys.keyFallingDate)
+        defaults.synchronize()
+    }
+    
+    func getBornDate()->Date{
+        let defaults = UserDefaults.standard
+        if let string = defaults.string(forKey: defaultsKeys.keyBornDate)  {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy"
+           return dateFormatter.date(from: string)!
+        }
+        return Date()
+    }
+    
+    func getFallingDate()->Date{
+         let defaults = UserDefaults.standard
+        if let string = defaults.string(forKey: defaultsKeys.keyFallingDate)  {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy"
+            let date = dateFormatter.date(from: string)!
+            return date
+        }
+        return Date()
+    }
+    
+    
+    func getSentenceDate()->Date{
+        let d1 = getBornDate()
+        var d2 = getFallingDate()
+        
+        let time = d2.timeIntervalSince(d1)
+        
+        d2.addTimeInterval(time)
+        
+        return d2
     }
     
     
