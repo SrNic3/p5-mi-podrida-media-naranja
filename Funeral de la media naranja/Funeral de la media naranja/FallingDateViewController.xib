@@ -40,7 +40,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccciona la fecha de enamoramiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8As-yO-OYE">
-                    <rect key="frame" x="33" y="120" width="309" height="21"/>
+                    <rect key="frame" x="33" y="169" width="309" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -58,12 +58,12 @@
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="7XG-V6-4pL" firstAttribute="top" secondItem="8As-yO-OYE" secondAttribute="bottom" constant="35" id="49Q-12-6IT"/>
                 <constraint firstItem="egy-K9-EA0" firstAttribute="top" secondItem="7XG-V6-4pL" secondAttribute="bottom" constant="42" id="6H3-6j-Bh3"/>
                 <constraint firstItem="7XG-V6-4pL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9cy-ea-fHa"/>
                 <constraint firstItem="8As-yO-OYE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IQo-cq-Gbq"/>
                 <constraint firstItem="egy-K9-EA0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="L6T-sd-lAY"/>
                 <constraint firstItem="7XG-V6-4pL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QZV-KL-IUD"/>
-                <constraint firstItem="8As-yO-OYE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="dwo-Os-M60"/>
             </constraints>
         </view>
     </objects>

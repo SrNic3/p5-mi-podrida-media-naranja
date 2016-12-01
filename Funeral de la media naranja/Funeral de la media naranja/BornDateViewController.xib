@@ -64,7 +64,7 @@
                 <constraint firstItem="WrR-co-gme" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WEL-0g-1V2"/>
                 <constraint firstItem="JMA-Zd-goX" firstAttribute="top" secondItem="WrR-co-gme" secondAttribute="bottom" constant="42" id="Ysv-Ek-2Nq"/>
                 <constraint firstItem="JMA-Zd-goX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fn7-9E-9VW"/>
-                <constraint firstItem="yx2-mX-b1e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="nHb-jw-mN6"/>
+                <constraint firstItem="WrR-co-gme" firstAttribute="top" secondItem="yx2-mX-b1e" secondAttribute="bottom" constant="35" id="ypD-YE-IDs"/>
             </constraints>
         </view>
     </objects>

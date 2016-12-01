@@ -17,8 +17,10 @@ class FallingDateViewController: UIViewController {
         super.viewDidLoad()
         
         fallingDatePicker.setValue(UIColor.white, forKey: "textColor")
+        let del = UIApplication.shared.delegate as? AppDelegate
         fallingDatePicker.setValue(Date(), forKey: "maximumDate")
-        
+        fallingDatePicker.setValue(del?.getPresenter().getFallingDate(), forKey: "date")
+
     }
     
     override func didReceiveMemoryWarning() {

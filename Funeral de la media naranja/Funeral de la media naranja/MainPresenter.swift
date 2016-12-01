@@ -40,8 +40,7 @@ class MainPresenter{
             let sentenceViewController = SentenceViewController()
             del?.getNavigationController().pushViewController(sentenceViewController, animated: true)
         }else{
-            let del = UIApplication.shared.delegate as? AppDelegate
-            del?.showAlert()
+            showAlert()
         }
         
         var d1 = getBornDate()
@@ -111,5 +110,10 @@ class MainPresenter{
         return d2
     }
     
-    
+    func showAlert(){
+        let alert = UIAlertController(title: "Fecha incorrecta", message: "La fecha de enamoramiento no puede ser anterior o igual a la fecha de tu nacimiento.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Atrás", style: UIAlertActionStyle.default, handler: nil))
+        let del = UIApplication.shared.delegate as? AppDelegate
+        del?.getNavigationController().present(alert, animated: true, completion: nil)
+    }
 }

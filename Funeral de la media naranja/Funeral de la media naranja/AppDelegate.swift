@@ -61,12 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return presenter!
     }
     
-    func showAlert(){
-        let alert = UIAlertController(title: "Fecha incorrecta", message: "La fecha de enamoramiento no puede ser anterior al nacimiento, de otra forma se podría ser enamoramiento desde un universo paralelo, pero si los grandes del DIT dicen que no es que no :(", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Atrás", style: UIAlertActionStyle.default, handler: nil))
-        navigationController?.present(alert, animated: true, completion: nil)
-    }
-
 
 }
 

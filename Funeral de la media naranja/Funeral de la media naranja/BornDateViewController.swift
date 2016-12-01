@@ -17,8 +17,12 @@ class BornDateViewController: UIViewController {
         super.viewDidLoad()
 
         bornDatePicker.setValue(UIColor.white, forKey: "textColor")
-        bornDatePicker.setValue(Date(), forKey: "maximumDate")
         
+        bornDatePicker.setValue(Date(), forKey: "maximumDate")
+
+        
+        let del = UIApplication.shared.delegate as? AppDelegate
+        bornDatePicker.setValue(del?.getPresenter().getBornDate(), forKey: "date")
     }
     
     override func didReceiveMemoryWarning() {

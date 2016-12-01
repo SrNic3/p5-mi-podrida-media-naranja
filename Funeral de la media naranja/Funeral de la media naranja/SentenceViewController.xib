@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habrá pasado la mitad de su vida con su amor el: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rg-5p-ocw">
-                    <rect key="frame" x="37" y="303.5" width="300" height="60"/>
+                    <rect key="frame" x="234" y="482" width="300" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="0ZL-GW-aHq"/>
                         <constraint firstAttribute="width" constant="300" id="uiW-eh-vi9"/>
@@ -31,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd/MM/yyyy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E17-B1-NZR">
-                    <rect key="frame" x="140" y="371" width="95.5" height="21"/>
+                    <rect key="frame" x="336" y="549.5" width="96" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -46,14 +46,38 @@
                         <action selector="goBack" destination="-1" eventType="touchUpInside" id="osw-ld-ihW"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sentence_image" translatesAutoresizingMaskIntoConstraints="NO" id="sb6-PB-AhB">
+                    <rect key="frame" x="264" y="354" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="E8k-zT-mKt"/>
+                        <constraint firstAttribute="height" constant="128" id="ZFX-P1-kQN"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="3rg-5p-ocw" firstAttribute="top" secondItem="sb6-PB-AhB" secondAttribute="bottom" id="28J-81-03z"/>
                 <constraint firstItem="3rg-5p-ocw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="84x-Oy-FOo"/>
                 <constraint firstItem="E17-B1-NZR" firstAttribute="top" secondItem="3rg-5p-ocw" secondAttribute="bottom" constant="7.5" id="8bW-zc-8Yk"/>
+                <constraint firstItem="sb6-PB-AhB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BKS-SR-pfe"/>
                 <constraint firstItem="3rg-5p-ocw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ee2-RA-WcE"/>
+                <constraint firstItem="sb6-PB-AhB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="ST9-YJ-QFR"/>
                 <constraint firstItem="E17-B1-NZR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wGa-NG-HMn"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ST9-YJ-QFR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="ST9-YJ-QFR"/>
+                    <exclude reference="Ee2-RA-WcE"/>
+                </mask>
+            </variation>
         </view>
     </objects>
+    <resources>
+        <image name="sentence_image" width="1000" height="628"/>
+    </resources>
 </document>
